@@ -1,0 +1,40 @@
+select {
+	width: 300px;
+}
+
+select#all-books {
+	width: 209px;
+}
+
+label {
+	vertical-align: baseline;
+}
+
+label#desclabel {
+	vertical-align: top;
+}
+
+input {
+	width: 165px;
+}
+
+select, button , input, textarea {
+	font-family: Corbel;
+	font-size: 15px;
+}
+span.bold {
+	font-weight: bold;
+}
+
+td {
+	padding: 5px;
+	vertical-align: top;
+}
+
+body {
+	font-family: Constantia;
+}
+
+.rightal {
+	text-align: right;
+}

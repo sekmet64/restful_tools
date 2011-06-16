@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>RESTful Test Application</title>
+  	<script type="text/javascript" src="/static/jquery-1.6.1.js"></script>
+  	<script type="text/javascript" src="/static/app.js"></script>
+  	<link rel="stylesheet" type="text/css" href="/static/style.css" />
+    
+  </head>
+  
+  <body>
+  	<header>
+  		<hgroup>
+  			<h1>Books</h1>
+  			<h2>Example application for testing the RESTful API tools</h2>
+  		</hgroup>
+  	</header>
+  	<hr />
+	<table summary="books">
+		<tr>
+			<td>Bookshelves:</td>
+			<td>Books:</td>
+			<td>Details:</td>
+		</tr>
+	
+		<tr>
+			<td><select id="bookshelves" size="20"></select></td>
+			<td><select id="books" size="20"></select></td>
+			<td><div id="details"></div></td>
+		</tr>
+		<tr>
+			<td>
+				<input id="create-bookshelf-text" type="text" />
+				<button id="create-bookshelf-button" type="button">Create bookshelf</button>
+			</td>
+			<td>
+				<select id="all-books"></select>
+				<button id="add-book" type="button">Add book</button>
+			</td>
+			<td>
+				<button id="remove-book" type="button">Remove selected book</button>
+			</td>
+		</tr>
+	</table>
+	
+	<br /><hr /><br />
+	Create a book: <br /><br />
+	
+	<table summary="new book">
+		<tr>
+			<td><label for="a-title">Title: </label></td>
+			<td><input id="a-title" type="text" /></td>
+		</tr>
+		
+		<tr>
+			<td><label for="a-isbn">ISBN: </label></td>
+			<td><input id="a-isbn" type="number" /></td>
+		</tr>
+		
+		<tr>
+			<td><label for="a-published">Published: </label></td>
+			<td><input id="a-published" type="date" /></td>
+		</tr>
+		
+		<tr>
+			<td><label id="desclabel" for="a-description">Description: </label></td>
+			<td><textarea id="a-description" rows="20" cols="60"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td class="rightal"><button id="create-book-button" type="button">Create book</button></td>
+		</tr>
+	</table>
+	
+  	<br /><hr /><br />
+	Update selected book: <br /><br />
+	
+    <table summary="selected book">
+		<tr>
+			<td><label for="u-title">Title: </label></td>
+			<td><input id="u-title" type="text" /></td>
+		</tr>
+		
+		<tr>
+			<td><label for="u-isbn">ISBN: </label></td>
+			<td><input id="u-isbn" type="number" /></td>
+		</tr>
+		
+		<tr>
+			<td><label for="u-published">Published: </label></td>
+			<td><input id="u-published" type="date" /></td>
+		</tr>
+		
+		<tr>
+			<td><label id="desclabel" for="u-description">Description: </label></td>
+			<td><textarea id="u-description" rows="20" cols="60"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td class="rightal"><button id="update-book-button" type="button">Update book</button></td>
+		</tr>
+	</table>
+  </body>
+</html>
